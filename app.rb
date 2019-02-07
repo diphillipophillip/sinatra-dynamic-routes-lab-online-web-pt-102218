@@ -7,5 +7,10 @@ class App < Sinatra::Base
     "#{@name}".reverse 
   end 
   
+  get '/square/:number' do 
+    @number = @params[:number]
+    binding.pry 
+  end 
+  
   
 end
