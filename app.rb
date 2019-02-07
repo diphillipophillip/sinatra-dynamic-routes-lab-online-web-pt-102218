@@ -13,5 +13,11 @@ class App < Sinatra::Base
     @second_num.to_s
   end 
   
+  get '/say/:number/:phrase' do 
+    @phrase = @params[:phrase]
+    @number = @number[:phrase]
+    binding.pry
+  end 
+  
   
 end
