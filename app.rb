@@ -15,7 +15,7 @@ class App < Sinatra::Base
   
   get '/say/:number/:phrase' do 
     @phrase = @params[:phrase]
-    @number = @number[:phrase]
+    @number = @params[:number]
     binding.pry
   end 
   
